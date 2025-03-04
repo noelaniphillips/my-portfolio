@@ -1,0 +1,2014 @@
+
+/* media query也有animation */
+/* 手机格子翻页 */
+
+*{
+    padding: 0;
+    margin: 0;
+    color: rgb(41, 41, 41);
+  }
+
+html{
+    scroll-behavior: smooth;
+}
+
+.mobile {
+    display: none;
+}
+
+/* Show mobile content and hide desktop content for screens < 1000px */
+@media (max-width: 1150px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .mini {
+        display: none;
+    }
+}
+
+@media (max-width: 750px) {   
+    /* assume phone screen width 425px */
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: none;
+    }
+    .mini {
+        display: block;
+    }
+}
+
+@media (min-width: 1151px) {
+    .desktop {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+    .mini {
+        display: none;
+    }
+}
+
+
+body {
+    background-image: url('images/bg_820.png');
+    /* background-image: url('images/gradient_video.mp4'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Compact", "SF Mono", "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+/* #region */
+header {
+    position: fixed; /* Fixed position to keep it at the top */
+    width: 100%; /* Full width */
+    height: 45px;
+    z-index: 1000; /* Ensure it's above other content */
+    background-color: rgba(136, 136, 136, 0.6);
+    align-items: center; /* Center items vertically */
+    justify-content: center;
+    backdrop-filter: blur(10px) saturate(150%); /* Apply backdrop blur */
+    -webkit-backdrop-filter: blur(10px) saturate(150%); /* For Safari */
+    display: flex;
+}
+
+.social-logo{
+    height: 30px;
+    width: 30px;
+    margin-left: 40px;
+    transition: transform 0.25s ease;
+}
+
+.social-logo:hover{
+    height: 30px;
+    width: 30px;
+    transform: scale(1.15);
+}
+
+.grid-layout{
+    display:grid;
+    min-height: 120vh;
+    padding-top: 45px;
+    background-color: rgba(0, 0, 0, 0);
+    grid-template-columns: auto 1000px auto;
+    grid-auto-rows: 100%;
+}
+
+.sidebar.left{
+    grid-column: 1;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.main.area{
+    grid-column: 2;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.sidebar.right{
+    grid-column: 3;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.grid-container{
+    display: grid;
+    min-height: 100em;
+    background-color: rgba(0, 0, 0, 0);
+    padding-top: 55px;
+    padding-bottom: 27px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 315px; 
+    grid-gap: 30px;
+}
+
+/* grid item starts here */
+
+.headshot{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+}
+
+.intro{
+    grid-column: 3 / span 4;
+    grid-row: 1 / span 1;
+}
+
+.education{
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+}
+
+.work{
+    grid-column: 3 / span 4;
+    grid-row: 2 / span 2;
+}
+
+.project-data-science {
+    grid-column: 1 / span 3;
+    grid-row: 4 / span 1;
+}
+
+.project-full-stack {
+    grid-column: 4 / span 3;
+    grid-row: 4 / span 1;
+}
+
+.d-project-3 {
+    grid-column: 1 / span 3;
+    grid-row: 5 / span 1;
+}
+
+.d-project-4 {
+    grid-column: 4 / span 3;
+    grid-row: 5 / span 1;
+}
+
+
+
+/* .skill {
+    grid-column: 1 / span 3;
+    grid-row: 5 / span 1;
+}
+
+.award {
+    grid-column: 4 / span 3;
+    grid-row: 5 / span 1;
+}
+ */
+
+/* start of smooth reveal animation for desktop */
+
+/* .grid-item {
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 17px;
+    box-shadow: 1px 1px 15px rgba(46, 46, 46, 0.2);
+    opacity: 0;
+    transform: translateY(60px);
+    transition: transform 0.9s ease-out, box-shadow 0.2s ease, opacity 0.9s ease-out;
+}
+
+.grid-item.reveal {
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.9s ease-out, opacity 0.9s ease-out; 
+} */
+
+.grid-item{
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 17px;
+    box-shadow: 1px 1px 15px rgba(46, 46, 46, 0.2);
+    opacity: 0;
+    transform: translateY(60px);
+}
+
+.grid-item.headshot {  
+    transition: transform 0.9s ease-out, box-shadow 0.2s ease, opacity 0.9s ease-out;
+}
+
+.grid-item.headshot.reveal {
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.9s ease-out, opacity 0.9s ease-out; 
+}
+
+.grid-item.intro {  
+    transition: transform 0.9s ease-out, box-shadow 0.2s ease, opacity 0.9s ease-out;
+}
+
+.grid-item.intro.reveal {
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.9s ease-out, opacity 0.9s ease-out; 
+}
+
+.grid-item.education {  
+    transition: transform 0.9s ease-out 0.07s, box-shadow 0.2s ease, opacity 0.9s ease-out 0.07s;
+}
+
+.grid-item.education.reveal {
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.9s ease-out 0.07s, opacity 0.9s ease-out 0.07s; 
+}
+
+.grid-item.work {  
+    transition: transform 0.9s ease-out 0.07s, box-shadow 0.2s ease, opacity 0.9s ease-out 0.07s;
+}
+
+.grid-item.work.reveal {
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.9s ease-out 0.07s, opacity 0.9s ease-out 0.07s; 
+}
+
+
+.grid-item.project-data-science {  
+    transition: transform 0.9s ease-out, box-shadow 0.2s ease, opacity 0.9s ease-out;
+}
+
+.grid-item.project-data-science.reveal {
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.9s ease-out, opacity 0.9s ease-out; 
+}
+
+.grid-item.project-full-stack {  
+    transition: transform 0.9s ease-out, box-shadow 0.2s ease, opacity 0.9s ease-out;
+}
+
+.grid-item.project-full-stack.reveal {
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.9s ease-out, opacity 0.9s ease-out; 
+}
+
+.grid-item.d-project-3 {  
+    transition: transform 0.9s ease-out, box-shadow 0.2s ease, opacity 0.9s ease-out;
+}
+
+.grid-item.d-project-3.reveal {
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.9s ease-out, opacity 0.9s ease-out; 
+}
+
+.grid-item.d-project-4 {  
+    transition: transform 0.9s ease-out, box-shadow 0.2s ease, opacity 0.9s ease-out;
+}
+
+.grid-item.d-project-4.reveal {
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.9s ease-out, opacity 0.9s ease-out; 
+}
+
+/* end of smooth reveal animation for desktop */
+
+.grid-item:hover {
+    transform: scale(1.013) !important;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.30);
+    transition: transform 0.25s ease, box-shadow 0.2s ease !important; /* Ensure the hover transition is different */
+}
+
+
+.grid-item-banner{
+    /* banner structure */
+    width: 100%;
+    height: 88px;
+    border-radius: 17px 17px 0 0;
+    /* background-color: rgba(232,241,250,255); */
+    background: linear-gradient(to bottom, rgb(229, 241, 252, 0.4), rgba(232, 241, 250, 0));
+    /* text font */
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;    font-size: 23px;
+    font-weight: 500;
+    /* text position */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.banner-icon {
+    width: 35px; /* Set width of the icon */
+    height: 35px; /* Set height of the icon */
+    margin-right: 20px; /* Space between the icon and text */
+    margin-left: 35px;
+}
+
+/* grid item ends here */
+
+
+/* Greeting Section */
+#slider {
+    margin: 0 auto;
+    width: 575px;
+    text-align: left;
+ }
+ #slider input[type=radio] {
+    display: none;
+ }
+ #slider label {
+    cursor:pointer;
+    text-decoration: none;
+ }
+
+ /* When you want to see the shape of the slides! */
+ #slides {
+    padding: 0px;
+    /* border: 1px solid #ff0000; */
+    position: relative;
+    z-index: 1;
+ }
+ #overflow {
+    width: 100%;
+    overflow: hidden;
+ }
+ #slide1:checked ~ #slides .inner {
+    margin-left: 0%;
+ }
+ #slide2:checked ~ #slides .inner {
+    margin-left: -100%;
+ }
+
+ #slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 200%;
+    height: 175px;
+    padding-right: 40px;
+    padding-top: 0px;
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+    /* font-weight: 300s; */
+    font-weight: 415;
+    font-size: 15px;
+    line-height: 1.7;
+ }
+
+ #slides .slide {
+    width: 50%;
+    float:left;
+    display: flex;
+    height: 100%;
+    color: #fff;
+ }
+ #slides .slide_1 {
+    background: rgb(251, 251, 251, 0);
+ }
+ #slides .slide_2 {
+    background: rgb(251, 251, 251, 0);
+ }
+
+ #bullets {
+    margin: 0px 0 0;
+    text-align: center;
+ }
+ 
+ #bullets label {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius:100%;
+    background: rgba(189, 189, 189, 0.6);
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: background-color 0.25s ease;
+ }
+
+ #bullets label:hover {
+    background: rgba(115, 115, 115, 0.4);
+ }
+
+ #slide1:checked ~ #bullets label:nth-child(1),
+ #slide2:checked ~ #bullets label:nth-child(2) {
+    background: rgba(36, 36, 36, 0.6);
+ }
+
+/* End for Greeting Section */
+
+.grid-item-text {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: 415;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.headshot-picture{
+    height: 115px;
+    width: 115px;
+    margin-left: 30px;
+    margin-top: 35px;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 255, 255, 0.7);
+}
+
+.name {
+    margin-top: 28px;
+    margin-left: 29px;
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;    font-size: 23px;
+    font-weight: 592;
+    font-size: 32px;
+}
+
+.title{
+    margin-top: 7px;
+    margin-left: 29px;
+    line-height: 1.7;
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;    
+    font-size: 23px;
+    font-weight: 300s;
+    font-size: 15px;
+    color: rgb(112, 112, 112);
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
+
+}
+
+.link{
+    text-decoration: none;
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;  
+    font-weight: 850;
+    /* border-bottom: 1px dashed #5c5c5c; Dotted underline */
+    transition: background-color 0.3s ease;
+}
+
+.link:hover{
+    background-color: rgba(255, 200, 35, 0.3);
+    border-radius: 2px;
+}
+
+.line-breaker{
+    height: 18px;
+    text-align: center;
+    color: rgb(203, 203, 203);
+}
+
+
+/* experience starts */
+.experience-grid {
+    display: grid;
+    height: 85%;
+    grid-template-columns: 1fr 1.1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+    /* grid-gap: 2px; */
+}
+
+.experience-item{
+    display: flex;
+    width: 300px;
+}
+
+.company-logo{
+    height: 60px;
+    width: 60px;
+    border-radius: 25%;
+    opacity: 0.87;
+    /* border: 1.05px solid rgba(51, 51, 51, 0.081); */
+}
+
+.experience-content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 13px;
+}
+
+.internship-name{
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;  
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.company-name{
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;  
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.internship-time{
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;  
+    font-weight: 400;
+    font-size: 14px;
+    color: grey;
+}
+
+/* education section starts */
+.education-grid {
+    display: grid;
+    height: 80%;
+    grid-template-rows: repeat(3, 1fr);
+    margin-left: 35px;
+    margin-right: 30px;
+    margin-top: 50px;
+    grid-gap: 20px;
+}
+
+.education-item{
+    display: flex;
+    width: 250px;
+}
+
+.school-logo{
+    height: 60px;
+    width: 60px;
+    border-radius: 25%;
+    opacity: 0.87;
+    /* border: 1.05px solid rgba(51, 51, 51, 0.081); */
+}
+
+.education-content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 13px;
+}
+
+.school-name{
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;  
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.degree-name{
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;  
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.school-time{
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;  
+    font-weight: 400;
+    font-size: 14px;
+    color: grey;
+}
+
+.paws-container {
+    display: flex;
+    align-items: center; /* Vertically center the items if needed */
+}
+
+.paw-1, .paw-3 {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 60px;
+    transform: rotate(-15deg);
+}
+
+.paw-2, .paw-4 {
+    margin-left: 10px;
+    margin-top: 10px;
+    transform: rotate(15deg);
+}
+
+.paw-1, .paw-2, .paw-3, .paw-4 {
+    height: 25px;
+    width: 25px;
+    opacity: 0;
+    animation: fadeInOut 5s infinite; /* Duration and infinite loop */
+}
+
+.paw-1{
+    animation-delay: 2.5s;
+}
+
+.paw-2{
+    animation-delay: 2.8s;
+}
+
+.paw-3{
+    animation-delay: 0s;
+}
+
+.paw-4{
+    animation-delay: 0.3s;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 0.4; }
+    20% { opacity: 0.4; }
+    40% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* education section ends */
+
+
+/* project content section starts here */
+.project-content{
+    display: flex;
+    text-align: left;
+    margin-top: 0px;
+    height: 100%;
+    width: 100%;
+    word-break: normal; /* Ensures words do not break */
+    white-space: normal;
+}
+
+
+.project-picture{
+    height: 130px;
+    width: 150px;
+    margin-left: 20px;
+    margin-top: 12.5px;
+}
+
+.project-picture-caption-wrapper{
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+    /* font-weight: 300s; */
+    font-weight: 500;
+    font-size: 12px;
+    margin-left: 42px;
+    margin-top: -3px;
+}
+
+/* .project-picture-caption-wrapper a {
+    margin-left: 10px;
+    text-decoration: none;
+    background-color: rgb(128, 128, 128, 0.3);
+    color: rgba(0, 0, 0, 0.5);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: pink 1px solid;
+    border-radius: 10px;
+} */
+
+.project-picture-caption-wrapper a {
+    position: relative; /* Position relative to place pseudo-element */
+    margin-left: 10px;
+    text-decoration: none;
+    background-color: rgba(128, 128, 128, 0);
+    color: rgba(0, 0, 0, 0.5);
+    padding: 3px 5px;
+    border-radius: 13px; /* Set border radius */
+    z-index: 1; /* Ensure content stays above the pseudo-element */
+}
+
+.project-picture-caption-wrapper a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 13px; /* Match the radius of the main element */
+    padding: 2px; /* Adjust this to match the border width */
+    background: linear-gradient(to right, rgba(255, 192, 236, 0.8), rgba(0, 153, 255, 0.7)); /* Gradient for the border */
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    z-index: -1; /* Place the gradient behind the main content */
+}
+
+
+.project-picture-caption-wrapper a:hover {
+    background-color: rgba(180, 180, 180, 0.2);
+}
+
+
+.project-description {
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-top: 10px;
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+    /* font-weight: 300s; */
+    font-weight: 415;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.project-description span {
+    display: block;
+    text-align: left;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+/* project content section ends here */
+
+/* project slider section starts here */
+
+ /* When you want to see the shape of the slides! */
+/* project slider section starts here */
+/* project slider section starts here */
+#project-slider-ds, #project-slider-fs {
+    margin: 0 auto;
+    width: 100%;
+    text-align: left;
+    margin-top: -10px;
+}
+#project-slider-ds input[type=radio], #project-slider-fs input[type=radio] {
+    display: none;
+}
+#project-slider-ds label, #project-slider-fs label {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* When you want to see the shape of the slides! */
+#project-slides-ds, #project-slides-fs {
+    padding: 0;
+    /* border: 1px solid #ff0000; */
+    height: 190px;
+    position: relative;
+    z-index: 1;
+}
+#project-overflow-ds, #project-overflow-fs {
+    width: 100%;
+    overflow: hidden;
+}
+#project-slide1-ds:checked ~ #project-slides-ds .project-inner,
+#project-slide1-fs:checked ~ #project-slides-fs .project-inner {
+    margin-left: 0%;
+}
+#project-slide2-ds:checked ~ #project-slides-ds .project-inner,
+#project-slide2-fs:checked ~ #project-slides-fs .project-inner {
+    margin-left: -100%;
+}
+
+#project-slides-ds .project-inner, #project-slides-fs .project-inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 200%;
+    height: 190px;
+    display: flex;
+}
+
+#project-slides-ds .project-slide, #project-slides-fs .project-slide {
+    width: 50%;
+    display: flex;
+    height: 100%;
+    color: #fff;
+}
+#project-slides-ds .slide_1, #project-slides-fs .slide_1 {
+    background: rgba(251, 251, 251, 0);
+}
+#project-slides-ds .slide_2, #project-slides-fs .slide_2 {
+    background: rgba(251, 251, 251, 0);
+}
+
+#project-bullets-ds, #project-bullets-fs {
+    margin: 0;
+    text-align: center;
+}
+
+#project-bullets-ds label, #project-bullets-fs label {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    background: rgba(189, 189, 189, 0.6);
+    margin: 5px;
+    transition: background-color 0.25s ease;
+}
+
+#project-bullets-ds label:hover, #project-bullets-fs label:hover {
+    background: rgba(115, 115, 115, 0.4);
+}
+
+#project-slide1-ds:checked ~ #project-bullets-ds label:nth-child(1),
+#project-slide2-ds:checked ~ #project-bullets-ds label:nth-child(2),
+#project-slide1-fs:checked ~ #project-bullets-fs label:nth-child(1),
+#project-slide2-fs:checked ~ #project-bullets-fs label:nth-child(2) {
+    background: rgba(36, 36, 36, 0.6);
+}
+
+
+.grid-item.skill{
+    height: 130%;
+}
+
+
+/* footer section starts here */
+footer{
+    width: 100%; /* Full width */
+    /* margin-top: 170px; */
+    height: 150px;
+    align-items: center; /* Center items vertically */
+    justify-content: center;
+    backdrop-filter: blur(10px) saturate(150%); /* Apply backdrop blur */
+    -webkit-backdrop-filter: blur(10px) saturate(150%); /* For Safari */
+    background-color: rgba(136, 136, 136, 0.6);
+    color: #ffffff;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.desktop_footer{
+    margin-top: 252px;
+}
+
+/* #endregion */
+
+
+/* start of mobile section */
+
+/* mobile header + */
+.mobile header {
+    position: fixed; /* Fixed position to keep it at the top */
+    width: 100%; /* Full width */
+    height: 45px;
+    z-index: 1000; /* Ensure it's above other content */
+    background-color: rgba(136, 136, 136, 0.6);
+    align-items: center; /* Center items vertically */
+    justify-content: center;
+    backdrop-filter: blur(10px) saturate(150%); /* Apply backdrop blur */
+    -webkit-backdrop-filter: blur(10px) saturate(150%); /* For Safari */
+    display: flex;
+}
+
+.mobile-social-logo{
+    height: 30px;
+    width: 30px;
+    margin-left: 22px;
+    margin-right: 18px;
+    transition: transform 0.25s ease;
+}
+
+.mobile-social-logo:hover{
+    height: 30px;
+    width: 30px;
+    transform: scale(1.15);
+}
+/* mobile header - */
+
+/* mobile layout + */
+.mobile-grid-layout{
+    display:grid;
+    min-height: 120vh;
+    padding-top: 45px;
+    background-color: rgba(0, 0, 0, 0);
+    grid-template-columns: auto 660px auto;
+    grid-auto-rows: 100%;
+}
+
+.mobile-sidebar-left{
+    grid-column: 1;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.mobile-main-area{
+    grid-column: 2;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.mobile-sidebar-right{
+    grid-column: 3;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.mobile-grid-container {
+    display: grid;
+    min-height: 100em;
+    background-color: rgba(0, 0, 0, 0);
+    padding-top: 55px;
+    padding-bottom: 277px;
+    grid-template-columns: 660px; 
+    grid-auto-rows: minmax(320px, auto);
+    grid-gap: 30px;
+}
+
+/* mobile grid item animation + */
+
+.mobile-grid-item {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 17px;
+    box-shadow: 1px 1px 15px rgba(46, 46, 46, 0.2);
+    opacity: 0;
+    transform: translateY(60px);
+    transition: transform 0.9s ease-out, opacity 0.9s ease-out; /* Apply transition here */
+}
+
+.mobile-head,
+.mobile-greeting,
+.mobile-education {
+    transition: transform 0.9s ease-out, box-shadow 0.2s ease, opacity 0.9s ease-out; /* Consolidated transition properties */
+}
+
+.mobile-head.reveal,
+.mobile-greeting.reveal,
+.mobile-education.reveal,
+.mobile-grid-item.reveal { /* Apply reveal styles in one place */
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Individual delay for each element */
+.mobile-head {
+    transition-delay: 0s;
+}
+
+.mobile-greeting {
+    transition-delay: 0.14s;
+}
+
+.mobile-education {
+    transition-delay: 0.28s;
+}
+
+
+.mobile-grid-item:hover {
+    transform: scale(1.013);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.30);
+    transition: transform 0.25s ease, box-shadow 0.2s ease; /* Ensure the hover transition is different */
+}
+
+/* Override the hover effect for .mobile-grid-item.mobile-head */
+.mobile-grid-item.mobile-head:hover {
+    transform: none;
+    box-shadow: none;
+    transition: none; /* Remove transition effect if needed */
+}
+
+
+/* mobile grid item animation - */
+
+.mobile-head{
+    grid-row: 1;
+}
+
+.mobile-greeting{
+    grid-row: 2; 
+}
+
+.mobile-education{
+    grid-row: 3;
+}
+
+.mobile-work{
+    grid-row: 4;
+}
+
+.mobile-project-1 {
+    grid-row: 5;
+}
+
+.mobile-project-2 {
+    grid-row: 6;
+}
+
+.mobile-project-3 {
+    grid-row: 7;
+}
+
+.mobile-project-4 {
+    grid-row: 8;
+}
+/* mobile layout - */
+
+.mobile-grid-item-banner{
+    /* banner structure */
+    width: 100%;
+    height: 88px;
+    border-radius: 17px 17px 0 0;
+    /* background-color: rgba(232,241,250,255); */
+    background: linear-gradient(to bottom, rgb(229, 241, 252, 0.4), rgba(232, 241, 250, 0));
+    /* text font */
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;    font-size: 23px;
+    font-weight: 500;
+    /* text position */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* mobile headshot + */
+.mobile-head{
+    background-color: rgb(255, 255, 255, 0);
+    box-shadow: none;
+}
+
+.mobile-headshot-picture{
+    height: 140px;
+    width: 140px;
+    margin-left: 255px;
+    margin-top: 30px;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 255, 255, 0.7);
+}
+
+.mobile-name {
+    margin-top: 20px;
+    margin-left: 217px;
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;    font-size: 23px;
+    font-weight: 900;
+    font-size: 40px;
+    color: #3f3f3f;
+    /* text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); */
+}
+
+.mobile-title{
+    margin-top: 7px;
+    margin-left: 157px;
+    line-height: 1.7;
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;  
+    font-weight: 600;
+    font-size: 17px;
+    color: #575757;
+    /* text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); */
+}
+/* mobile headshot - */
+
+/* mobile greeting + */
+#mobile-greeting-slider {
+    margin: 0 auto;
+    width: 575px;
+    text-align: left;
+}
+#mobile-greeting-slider input[type=radio] {
+    display: none;
+}
+#mobile-greeting-slider label {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#mobile-greeting-slides {
+    padding: 0px;
+    position: relative;
+    z-index: 1;
+}
+#mobile-greeting-overflow {
+    width: 100%;
+    overflow: hidden;
+}
+#mobile-greeting-slide1:checked ~ #mobile-greeting-slides .mobile-greeting-inner {
+    margin-left: 0%;
+}
+#mobile-greeting-slide2:checked ~ #mobile-greeting-slides .mobile-greeting-inner {
+    margin-left: -100%;
+}
+
+#mobile-greeting-slides .mobile-greeting-inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 200%;
+    height: 175px;
+    padding-right: 40px;
+    padding-top: 0px;
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+    font-weight: 415;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+#mobile-greeting-slides .mobile-greeting-slide {
+    width: 50%;
+    float: left;
+    display: flex;
+    height: 100%;
+    color: #fff;
+}
+#mobile-greeting-slides .mobile-greeting-slide_1 {
+    background: rgb(251, 251, 251, 0);
+}
+#mobile-greeting-slides .mobile-greeting-slide_2 {
+    background: rgb(251, 251, 251, 0);
+}
+
+#mobile-greeting-bullets {
+    margin: 0px 0 0;
+    text-align: center;
+}
+
+#mobile-greeting-bullets label {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    background: rgba(189, 189, 189, 0.6);
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: background-color 0.25s ease;
+}
+
+#mobile-greeting-bullets label:hover {
+    background: rgba(115, 115, 115, 0.4);
+}
+
+#mobile-greeting-slide1:checked ~ #mobile-greeting-bullets label:nth-child(1),
+#mobile-greeting-slide2:checked ~ #mobile-greeting-bullets label:nth-child(2) {
+    background: rgba(36, 36, 36, 0.6);
+}
+
+/* mobile greeting - */
+
+
+/* mobile education + */
+.mobile-education {
+    display: flex;
+    flex-direction: row; /* Makes items lay horizontally */
+    align-items: flex-start; /* Aligns items at the start of the cross-axis */
+    flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+}
+
+.mobile-school-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 13px;
+}
+
+.mobile-school {
+    display: flex;
+    flex-direction: column; /* Makes items lay vertically */
+    align-items: flex-start; /* Aligns items at the start of the cross-axis */
+    margin: 10px; /* Adds some space around each .mobile-school element */
+    width: 170px;
+    margin-left: 30px;
+    margin-top: -62.5px;
+}
+
+.mobile-logo-and-paws {
+    display: flex;
+    flex-direction: row; /* Makes logo and paw images lay horizontally */
+    align-items: center; /* Aligns items at the center of the cross-axis */
+}
+
+
+.mobile-school-logo {
+    height: 70px;
+    width: 70px;
+    border-radius: 25%;
+    opacity: 0.87;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.mobile-school-name{
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;  
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.mobile-degree-name{
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;  
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.mobile-school-time{
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;  
+    font-weight: 400;
+    font-size: 14px;
+    color: grey;
+}
+
+.paw-1{
+    animation-delay: 2.5s;
+}
+
+.paw-2{
+    animation-delay: 2.8s;
+}
+
+.paw-3{
+    animation-delay: 0s;
+}
+
+.paw-4{
+    animation-delay: 0.3s;
+}
+
+
+.mobile-paw-1, .mobile-paw-2, .mobile-paw-3, .mobile-paw-4 {
+    height: 25px;
+    width: 25px;
+    opacity: 0;
+    animation: fadeInOut 5s infinite; /* Duration and infinite loop */
+}
+
+.mobile-paw-3, .mobile-paw-1 {
+    margin-bottom: 40px;
+    transform: rotate(70deg);
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.mobile-paw-4, .mobile-paw-2 {
+    transform: rotate(110deg);
+    margin-left: 10px;
+    margin-top: 40px;
+}
+
+.mobile-paw-1{
+    animation-delay: 2.5s;
+}
+
+.mobile-paw-2{
+    animation-delay: 2.8s;
+}
+
+.mobile-paw-3{
+    animation-delay: 0s;
+}
+
+.mobile-paw-4{
+    animation-delay: 0.3s;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 0.4; }
+    20% { opacity: 0.4; }
+    40% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* mobile education - */
+
+/* mobile work + */
+
+/* ! reusing the same code in the desktop version ! */
+
+/* mobile work - */
+
+
+/* mobile project 1 + */
+#mobile-project-1-slider {
+    margin: 0 auto;
+    width: 575px;
+    text-align: left;
+}
+#mobile-project-1-slider input[type=radio] {
+    display: none;
+}
+#mobile-project-1-slider label {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#mobile-project-1-slides {
+    padding: 0px;
+    position: relative;
+    z-index: 1;
+}
+#mobile-project-1-overflow {
+    width: 100%;
+    overflow: hidden;
+}
+#mobile-project-1-slide1:checked ~ #mobile-project-1-slides .mobile-project-1-inner {
+    margin-left: 0%;
+}
+#mobile-project-1-slide2:checked ~ #mobile-project-1-slides .mobile-project-1-inner {
+    margin-left: -100%;
+}
+
+#mobile-project-1-slides .mobile-project-1-inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 200%;
+    height: 175px;
+    padding-right: 40px;
+    padding-top: 0px;
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+    font-weight: 415;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+#mobile-project-1-slides .mobile-project-1-slide {
+    width: 50%;
+    float: left;
+    display: flex;
+    height: 100%;
+    color: #fff;
+}
+#mobile-project-1-slides .mobile-project-1-slide_1 {
+    background: rgb(251, 251, 251, 0);
+}
+#mobile-project-1-slides .mobile-project-1-slide_2 {
+    background: rgb(251, 251, 251, 0);
+}
+
+#mobile-project-1-bullets {
+    margin: 0px 0 0;
+    text-align: center;
+}
+
+#mobile-project-1-bullets label {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    background: rgba(189, 189, 189, 0.6);
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: background-color 0.25s ease;
+}
+
+#mobile-project-1-bullets label:hover {
+    background: rgba(115, 115, 115, 0.4);
+}
+
+#mobile-project-1-slide1:checked ~ #mobile-project-1-bullets label:nth-child(1),
+#mobile-project-1-slide2:checked ~ #mobile-project-1-bullets label:nth-child(2) {
+    background: rgba(36, 36, 36, 0.6);
+}
+
+.mobile-project-1-slide-content {
+    display: flex;
+    align-items: flex-start; 
+    width: 100%;
+}
+
+.mobile-project-picture-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px; 
+}
+
+.mobile-project-picture {
+    height: 130px;
+    width: 150px;
+    margin-top: 12.5px;
+}
+
+.mobile-project-picture-caption {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.mobile-project-picture-caption-wrapper {
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: -3px;
+}
+
+.mobile-project-picture-caption-wrapper a {
+    position: relative; /* Position relative to place pseudo-element */
+    margin-left: 10px;
+    text-decoration: none;
+    background-color: rgba(128, 128, 128, 0);
+    color: rgba(0, 0, 0, 0.5);
+    padding: 3px 5px;
+    border-radius: 13px; /* Set border radius */
+    z-index: 1; /* Ensure content stays above the pseudo-element */
+}
+
+.mobile-project-picture-caption-wrapper a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 13px; /* Match the radius of the main element */
+    padding: 2px; /* Adjust this to match the border width */
+    background: linear-gradient(to right, rgba(255, 192, 236, 0.8), rgba(0, 153, 255, 0.7)); /* Gradient for the border */
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    z-index: -1; /* Place the gradient behind the main content */
+}
+
+
+.mobile-project-picture-caption-wrapper a:hover {
+    background-color: rgba(180, 180, 180, 0.2);
+}
+
+.mobile-project-description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+    font-weight: 415;
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: calc(100% - 170px); /* Adjust the width to fit next to the image */
+}
+
+.mobile-project-description span {
+    font-weight: 500;
+    font-size: 17px;
+}
+/* mobile project 1 - */
+
+
+
+/* mobile project 2 + */
+#mobile-project-2-slider {
+    margin: 0 auto;
+    width: 575px;
+    text-align: left;
+}
+#mobile-project-2-slider input[type=radio] {
+    display: none;
+}
+#mobile-project-2-slider label {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#mobile-project-2-slides {
+    padding: 0px;
+    position: relative;
+    z-index: 1;
+}
+#mobile-project-2-overflow {
+    width: 100%;
+    overflow: hidden;
+}
+#mobile-project-2-slide1:checked ~ #mobile-project-2-slides .mobile-project-2-inner {
+    margin-left: 0%;
+}
+#mobile-project-2-slide2:checked ~ #mobile-project-2-slides .mobile-project-2-inner {
+    margin-left: -100%;
+}
+
+#mobile-project-2-slides .mobile-project-2-inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 200%;
+    height: 175px;
+    padding-right: 40px;
+    padding-top: 0px;
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+    font-weight: 415;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+#mobile-project-2-slides .mobile-project-2-slide {
+    width: 50%;
+    float: left;
+    display: flex;
+    height: 100%;
+    color: #fff;
+}
+#mobile-project-2-slides .mobile-project-2-slide_1 {
+    background: rgb(251, 251, 251, 0);
+}
+#mobile-project-2-slides .mobile-project-2-slide_2 {
+    background: rgb(251, 251, 251, 0);
+}
+
+#mobile-project-2-bullets {
+    margin: 0px 0 0;
+    text-align: center;
+}
+
+#mobile-project-2-bullets label {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    background: rgba(189, 189, 189, 0.6);
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: background-color 0.25s ease;
+}
+
+#mobile-project-2-bullets label:hover {
+    background: rgba(115, 115, 115, 0.4);
+}
+
+#mobile-project-2-slide1:checked ~ #mobile-project-2-bullets label:nth-child(1),
+#mobile-project-2-slide2:checked ~ #mobile-project-2-bullets label:nth-child(2) {
+    background: rgba(36, 36, 36, 0.6);
+}
+
+.mobile-project-2-slide-content {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    width: 100%;
+}
+
+.mobile-project-new-slide-content {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    width: 100%;
+}
+
+/* shared attributes between project 1 and 2 + */
+/* .mobile-project-picture-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px; 
+}
+
+.mobile-project-picture {
+    height: 130px;
+    width: 150px;
+    margin-top: 12.5px;
+}
+
+.mobile-project-picture-caption {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.mobile-project-picture-caption-wrapper {
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: -3px;
+}
+
+.mobile-project-picture-caption-wrapper a {
+    margin-left: 10px;
+    text-decoration: none;
+    background-color: rgba(128, 128, 128, 0.3);
+    color: rgba(0, 0, 0, 0.5);
+    padding: 3px 5px;
+    border-radius: 10px;
+}
+
+.mobile-project-picture-caption-wrapper a:hover {
+    background-color: rgba(69, 69, 69, 0.3);
+}
+
+.mobile-project-description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+    font-weight: 415;
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: calc(100% - 170px);
+}
+
+.mobile-project-description span {
+    font-weight: 500;
+    font-size: 17px;
+} */
+
+/* shared attributes between project 1 and 2 - */
+
+/* mobile project 2 - */
+
+/* end of mobile section */
+
+
+/* Start of Mini */
+
+/* mini header + */
+.mini header {
+    position: fixed; /* Fixed position to keep it at the top */
+    width: 100%; /* Full width */
+    height: 45px;
+    z-index: 1000; /* Ensure it's above other content */
+    background-color: rgba(136, 136, 136, 0.6);
+    align-items: center; /* Center items vertically */
+    justify-content: center;
+    backdrop-filter: blur(10px) saturate(150%); /* Apply backdrop blur */
+    -webkit-backdrop-filter: blur(10px) saturate(150%); /* For Safari */
+    display: flex;
+}
+
+
+.mini-social-logo{
+    height: 30px;
+    width: 30px;
+    margin-left: 22px;
+    margin-right: 18px;
+    transition: transform 0.25s ease;
+}
+
+.mini-social-logo:hover{
+    height: 30px;
+    width: 30px;
+    transform: scale(1.15);
+}
+/* mini header - */
+
+
+/* mini grid layout + */
+.mini-grid-layout {
+    display: grid;
+    min-height: 120vh;
+    padding-top: 45px;
+    background-color: rgba(0, 0, 0, 0);
+    grid-template-columns: 1fr 360px 1fr;
+    grid-auto-rows: 100%;
+}
+
+.mini-sidebar-left{
+    grid-column: 1;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.mini-main-area{
+    grid-column: 2;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.mini-sidebar-right{
+    grid-column: 3;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.mini-grid-container {
+    display: grid;
+    min-height: 100em;
+    background-color: rgba(0, 0, 0, 0);
+    padding-top: 55px;
+    padding-bottom: 277px;
+    grid-template-columns: 393px; 
+    grid-auto-rows: minmax(320px, auto);
+    grid-gap: 30px;
+}
+
+.mini-grid-item {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 17px;
+    box-shadow: 1px 1px 15px rgba(46, 46, 46, 0.2);
+    width: 360px;
+}
+
+@media (min-width: 393px){
+.mini-grid-item:not(.mini-head):hover {
+    transform: scale(1.013);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.30);
+    transition: transform 0.25s ease, box-shadow 0.2s ease; /* Ensure the hover transition is different */
+}
+}
+
+.mini-head{
+    grid-row: 1;
+}
+
+.mini-greeting{
+    grid-row: 2; 
+}
+
+.mini-education{
+    grid-row: 3;
+}
+
+.mini-work{
+    grid-row: 4;
+    height: 1150px;
+}
+
+.mini-project-1 {
+    grid-row: 5;
+}
+
+.mini-project-2 {
+    grid-row: 6;
+}
+
+.mini-project-3 {
+    grid-row: 7;
+}
+
+.mini-project-4 {
+    grid-row: 8;
+}
+
+.mini-grid-item-banner{
+    /* banner structure */
+    width: 100%;
+    height: 88px;
+    border-radius: 17px 17px 0 0;
+    /* background-color: rgba(232,241,250,255); */
+    background: linear-gradient(to bottom, rgb(229, 241, 252, 0.4), rgba(232, 241, 250, 0));
+    /* text font */
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;    font-size: 23px;
+    font-weight: 500;
+    /* text position */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* mini grid layout - */
+
+/* mini headshot + */
+.mini-head{
+    background-color: rgba(54, 129, 61, 0);
+    box-shadow: none;
+}
+
+.mini-headshot-picture{
+    height: 140px;
+    width: 140px;
+    margin-left: 110px;
+    margin-top: 30px;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 255, 255, 0.7);
+}
+
+.mini-name {
+    margin-top: 20px;
+    margin-left: 70px;
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;    font-size: 23px;
+    font-weight: 900;
+    font-size: 40px;
+    color: #3f3f3f;
+    /* text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); */
+}
+
+.mini-title{
+    margin-top: 7px;
+    margin-left: 70px;
+    line-height: 1.7;
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;  
+    font-weight: 600;
+    font-size: 17px;
+    color: #575757;
+    /* text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); */
+}
+
+#ottoImage {
+    height: 50px;
+    width: 90px;
+    margin-top: -50px;
+    margin-left: 250px;
+    display: block; /* Start visible */
+}
+/* mini headshot - */
+
+/* mini greeting + */
+
+.mini-greeting-text {
+    padding-left: 45px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    line-height: 1.7;
+}
+
+/* mini greeting -  */
+
+
+/* mini education + */
+.mini-education-grid {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    margin-left: 35px;
+    margin-right: 30px;
+    margin-top: 30px;
+    grid-gap: 20px;
+}
+
+.mini-education-item {
+    display: flex;
+    width: 250px;
+    margin-left: 20px;
+}
+
+.mini-school-logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 25%;
+    opacity: 0.87;
+    /* border: 1.05px solid rgba(51, 51, 51, 0.081); */
+}
+
+.mini-education-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 13px;
+}
+
+.mini-school-name {
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;  
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.mini-degree-name {
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;  
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.mini-school-time {
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;  
+    font-weight: 400;
+    font-size: 14px;
+    color: grey;
+}
+
+.mini-paws-container {
+    display: flex;
+    align-items: center; /* Vertically center the items if needed */
+}
+
+.mini-paw-1, .mini-paw-3 {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 60px;
+    transform: rotate(-15deg);
+}
+
+.mini-paw-2, .mini-paw-4 {
+    margin-left: 10px;
+    margin-top: 10px;
+    transform: rotate(15deg);
+}
+
+.mini-paw-1, .mini-paw-2, .mini-paw-3, .mini-paw-4 {
+    height: 25px;
+    width: 25px;
+    opacity: 0;
+    animation: mini-fadeInOut 5s infinite; /* Duration and infinite loop */
+}
+
+.mini-paw-1 {
+    animation-delay: 2.5s;
+}
+
+.mini-paw-2 {
+    animation-delay: 2.8s;
+}
+
+.mini-paw-3 {
+    animation-delay: 0s;
+}
+
+.mini-paw-4 {
+    animation-delay: 0.3s;
+}
+
+@keyframes mini-fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 0.4; }
+    20% { opacity: 0.4; }
+    40% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* mini education - */
+.mini-work-grid {
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    margin-left: 35px;
+    margin-right: 30px;
+    margin-top: 30px;
+    grid-gap: 30px;
+}
+
+.mini-work-item {
+    display: flex;
+    width: 250px;
+    margin-left: 20px;
+}
+
+.mini-company-logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 25%;
+    opacity: 0.87;
+    /* border: 1.05px solid rgba(51, 51, 51, 0.081); */
+}
+
+.mini-work-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 13px;
+}
+
+.mini-internship-name {
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;  
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.mini-company-name {
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;  
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.mini-work-time {
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif;  
+    font-weight: 400;
+    font-size: 14px;
+    color: grey;
+}
+
+
+
+/* mini experience + */
+
+/* mini experience - */
+
+
+/* mini project + */
+.mini-project-1 {
+    height: 530px;
+}
+
+.mini-project-2 {
+    height: 530px;
+}
+
+.mini-project-3 {
+    height: 530px;
+}
+
+.mini-project-4 {
+    height: 530px;
+}
+
+.mini-project-picture-1{
+    height: 130px;
+    width: 180px;
+    margin-left: 87.5px;
+    margin-top: 12.5px;
+}
+
+.mini-project-picture-2{
+    height: 130px;
+    width: 240px;
+    margin-left: 37.5px;
+    margin-top: 12.5px;
+    margin-bottom: 10px;
+}
+
+.mini-project-picture-3{
+    height: 115px;
+    width: 215px;
+    margin-left: 72.5px;
+    margin-top: 12.5px;
+    margin-bottom: 10px;
+}
+
+.mini-project-picture-4{
+    height: 100px;
+    width: 200px;
+    margin-left: 82.5px;
+    margin-top: 12.5px;
+    margin-bottom: 10px;
+}
+
+.mini-project-description {
+    margin-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+    /* font-weight: 300s; */
+    font-weight: 415;
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.mini-project-description span {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+/* mini project - */
+
+
+/* End of Mini */

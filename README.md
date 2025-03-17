@@ -7,7 +7,7 @@
 Selected Coursework: Deep Learning, Natural Language Processing, Algorithms and Data Structures, Probability and Statistical Inference
 
 ## Work Experience
-![Reddit Icon](/images/reddit-icon.webp)
+<img src="/images/reddit-icon.webp" alt="Reddit Icon" width="100" height="100">
 
 **(Upcoming) Data Science Intern @ Reddit (_May 2025 - August 2025_)**
 - Ads Platform Team

@@ -4,7 +4,8 @@
 **M.S. Computational Data Science	| Carnegie Mellon University School of Computer Science (_May 2025 - December 2026_)**
 
 **B.S. Statistics and Machine Learning | Carnegie Mellon University (_August 2021 - May 2025_)**
-Selected Coursework: Deep Learning, Natural Language Processing, Algorithms and Data Structures, Probability and Statistical Inference
+
+**Selected Coursework:** Deep Learning, Natural Language Processing, Algorithms and Data Structures, Probability and Statistical Inference
 
 ## Work Experience
 <img src="/images/reddit-icon.webp" alt="Reddit Icon" width="120" height="100">

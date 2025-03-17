@@ -14,11 +14,12 @@ Selected Coursework: Deep Learning, Natural Language Processing, Algorithms and 
 
 <img src="/images/salesforce-icon.png" alt="Salesforce Icon" width="120" height="100">
 
-
 **Data Science Intern @ Salesforce (_May 2024 - August 2024_)**
 - Revamped a revenue-forecasting tool using Python and SQL that automated the sales quota allocation process for over 4,000 sales strategy employees. 
 - Improved XGBoost model’s performance against business logics by 14% with simplified pre-processing logic, targeted feature selection, and regularization for zero-inflated data.
-- Led cross-functional collaboration with product manager and stakeholders to align model capabilities with business needs and integrate the final product into planning dashboards like AnaPlan. 
+- Led cross-functional collaboration with product manager and stakeholders to align model capabilities with business needs and integrate the final product into planning dashboards like AnaPlan.
+
+<img src="/images/cmu-icon.png" alt="Salesforce Icon" width="120" height="100">
 
 **Machine Learning Researcher @ Carnegie Mellon University (_November 2023 - May 2024_)**
 - Developed a deep learning system simulating Bayer’s supply chain that identified weak nodes through stress-testing and improved supply chain resilience. 
@@ -26,7 +27,7 @@ Selected Coursework: Deep Learning, Natural Language Processing, Algorithms and 
 - Analyzed Time to Recovery (TTR) metric to pinpoint nodes whose failure would have the largest impact and suggest alternative paths, reducing potential financial loss by up to 9.2% per node.
 
   
-**Data Analyst Intern @ Cognitive and Social Development Lab CMU (_May 2023 - August 2023_)**
+**Data Analyst Intern @ Carnegie Mellon University Cognitive Development Lab (_May 2023 - August 2023_)**
 - Modeled how children acquire and organize new semantic knowledge through a comprehensive analysis of three language corpora, each containing 8-13 million words, with Python, R, and NLTK.
 - Conducted hypothesis tests and built visualizations to compare the performances of two probability-based word association measures, presenting results to a lab of over 15 researchers and informing future research efforts.
 

@@ -8,19 +8,19 @@
 **Selected Coursework:** Deep Learning, Natural Language Processing, Algorithms and Data Structures, Probability and Statistical Inference
 
 ## Work Experience
-<img src="/images/reddit-icon.webp" alt="Reddit Icon" width="60" height="50">
+<img src="/images/reddit-icon.webp" alt="Reddit Icon" width="25" height="25">
 
 **(Upcoming) Data Science Intern @ Reddit (_May 2025 - August 2025_)**
 - Ads Platform Team
 
-<img src="/images/salesforce-icon.png" alt="Salesforce Icon" width="60" height="50">
+<img src="/images/salesforce-icon.png" alt="Salesforce Icon" width="23" height="20">
 
 **Data Science Intern @ Salesforce (_May 2024 - August 2024_)**
 - Revamped a revenue-forecasting tool using Python and SQL that automated the sales quota allocation process for over 4,000 sales strategy employees. 
 - Improved XGBoost model’s performance against business logics by 14% with simplified pre-processing logic, targeted feature selection, and regularization for zero-inflated data.
 - Led cross-functional collaboration with product manager and stakeholders to align model capabilities with business needs and integrate the final product into planning dashboards like AnaPlan.
 
-<img src="/images/cmu-icon.png" alt="Salesforce Icon" width="100" height="100">
+<img src="/images/cmu-icon.png" alt="Salesforce Icon" width="25" height="25">
 
 **Machine Learning Researcher @ Carnegie Mellon University (_November 2023 - May 2024_)**
 - Developed a deep learning system simulating Bayer’s supply chain that identified weak nodes through stress-testing and improved supply chain resilience. 

@@ -12,7 +12,8 @@ Selected Coursework: Deep Learning, Natural Language Processing, Algorithms and 
 **(Upcoming) Data Science Intern @ Reddit (_May 2025 - August 2025_)**
 - Ads Platform Team
 
-![Salesforce Icon](/images/salesforce-icon.png)
+<img src="/images/salesforce-icon.webp" alt="Salesforce Icon" width="100" height="100">
+
 
 **Data Science Intern @ Salesforce (_May 2024 - August 2024_)**
 - Revamped a revenue-forecasting tool using Python and SQL that automated the sales quota allocation process for over 4,000 sales strategy employees. 

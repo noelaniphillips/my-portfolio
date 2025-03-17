@@ -12,7 +12,7 @@ Selected Coursework: Deep Learning, Natural Language Processing, Algorithms and 
 **(Upcoming) Data Science Intern @ Reddit (_May 2025 - August 2025_)**
 - Ads Platform Team
 
-<img src="/images/salesforce-icon.png" alt="Salesforce Icon" width="100" height="100">
+<img src="/images/salesforce-icon.png" alt="Salesforce Icon" width="120" height="100">
 
 
 **Data Science Intern @ Salesforce (_May 2024 - August 2024_)**

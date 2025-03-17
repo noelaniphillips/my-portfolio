@@ -5,7 +5,7 @@
 
 **B.S. Statistics and Machine Learning | Carnegie Mellon University (_August 2021 - May 2025_)**
 
-**Selected Coursework:** Deep Learning, Natural Language Processing, Algorithms and Data Structures, Probability and Statistical Inference
+Selected Coursework: Deep Learning, Natural Language Processing, Algorithms and Data Structures, Probability and Statistical Inference
 
 ## Work Experience
 <img src="/images/reddit-icon.webp" alt="Reddit Icon" width="25" height="25">
@@ -51,9 +51,9 @@ Earned 3rd Place Prize in Undergraduate Statistics Research at CMU's Meeting of 
 
 ## Technical Skills
 
-**Languages**: Python, SQL, R, C
+**Languages**: Python, SQL, R, C++
 
-**Tools**: Git, SageMaker, Jupyter Notebook, Tableau, Excel, Snowflake, AWS, GCP
+**Tools**: Git, SageMaker, Jupyter Notebook, Tableau, Excel, Snowflake, AWS, Google Cloud Platform
 
 **Methodologies**: Time-Series Forecasting, Predictive Modeling, Deep Learning, A/B Testing
 

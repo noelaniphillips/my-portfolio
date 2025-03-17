@@ -6,12 +6,12 @@
 Selected Coursework: Deep Learning, Natural Language Processing, Algorithms and Data Structures, Probability and Statistical Inference
 
 ## Work Experience
-<img src="/images/reddit-icon.webp" alt="Reddit Icon" width="45" height="45">
+<img src="/images/reddit-icon2.jpg" alt="Reddit Icon" width="45" height="45">
 
 **(Upcoming) Data Science Intern @ Reddit (_May 2025 - August 2025_)**
 - Ads Platform Team
 
-<img src="/images/salesforce-icon.png" alt="Salesforce Icon" width="45" height="40">
+<img src="/images/salesforce-icon2.png" alt="Salesforce Icon" width="50" height="40">
 
 **Data Science Intern @ Salesforce (_May 2024 - August 2024_)**
 - Revamped a revenue-forecasting tool using Python and SQL that automated the sales quota allocation process for over 4,000 sales strategy employees. 

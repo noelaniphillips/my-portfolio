@@ -1,9 +1,8 @@
-# Data Scientist 
-
+# Noelani Phillips
 
 ## Education							       		
-- M.S. Computational Data Science	| Carnegie Mellon University School of Computer Science (_December 2026_)	 			        		
-- B.S. Statistics and Machine Learning | Carnegie Mellon University (_May 2025_)
+- M.S. Computational Data Science	| Carnegie Mellon University School of Computer Science (_May 2025 - December 2026_)	 			        		
+- B.S. Statistics and Machine Learning | Carnegie Mellon University (_August 2021 - May 2025_)
 
 ## Work Experience
 **(Upcoming) Data Science Intern @ Reddit (_May 2025 - August 2025_)**
@@ -37,6 +36,13 @@ Earned 3rd Place Prize in Undergraduate Statistics Research at CMU's Meeting of 
 
 - Uncovered patterns of racial and ethnic disproportionality in police stops with linear/logistic regression, hypothesis tests, and decision trees in R to make policy recommendations to Contra Costa’s Office of Justice. 
 - Performed sensitivity analyses to ensure robustness of findings despite variation in demographic data sources.
+
+
+## Technical Skills
+
+Languages: Python (Pandas, NumPy, PyTorch, TensorFlow, scikit-learn), SQL, R (dplyr, tidyr, ggplot2) C, C++
+Tools: Git, SageMaker, Jupyter Notebook, Tableau, Excel, Snowflake, AWS, GCP
+Methodologies: Time-Series Forecasting, Predictive Modeling, Deep Learning, A/B Testing
 
 
 

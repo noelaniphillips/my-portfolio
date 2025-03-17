@@ -2,30 +2,42 @@
 
 
 ## Education							       		
-- M.S., Computational Data Science	| Carnegie Mellon University School of Computer Science (_December 2026_)	 			        		
-- B.S., Statistics and Machine Learning | Carnegie Mellon University (_May 2025_)
+- M.S. Computational Data Science	| Carnegie Mellon University School of Computer Science (_December 2026_)	 			        		
+- B.S. Statistics and Machine Learning | Carnegie Mellon University (_May 2025_)
 
 ## Work Experience
-**Data Scientist @ Toyota Financial Services (_June 2022 - Present_)**
-- Uncovered and corrected missing step in production data pipeline which impacted over 70% of active accounts
-- Redeveloped loan originations model which resulted in 50% improvement in model performance and saving 1 million dollars in potential losses
+**(Upcoming) Data Science Intern @ Reddit (_May 2025 - August 2025_)**
+- Ads Platform Team
+  
+**Data Science Intern @ Salesforce (_May 2024 - August 2024_)**
+- Revamped a revenue-forecasting tool using Python and SQL that automated the sales quota allocation process for over 4,000 sales strategy employees. 
+- Improved XGBoost model’s performance against business logics by 14% with simplified pre-processing logic, targeted feature selection, and regularization for zero-inflated data.
+- Led cross-functional collaboration with product manager and stakeholders to align model capabilities with business needs and integrate the final product into planning dashboards like AnaPlan. 
 
-**Data Science Consultant @ Shawhin Talebi Ventures LLC (_December 2020 - Present_)**
-- Conducted data collection, processing, and analysis for novel study evaluating the impact of over 300 biometrics variables on human performance in hyper-realistic, live-fire training scenarios
-- Applied unsupervised deep learning approaches to longitudinal ICU data to discover novel sepsis sub-phenotypes
+**Machine Learning Researcher @ Carnegie Mellon University (_November 2023 - May 2024_)**
+- Developed a deep learning system simulating Bayer’s supply chain that identified weak nodes through stress-testing and improved supply chain resilience. 
+- Trained a Graph Neural Network (GNN) using PyTorch and TensorFlow on over 250,000 high-impact disruption scenarios, predicting the monetary impact with an accuracy of 84%.  
+- Analyzed Time to Recovery (TTR) metric to pinpoint nodes whose failure would have the largest impact and suggest alternative paths, reducing potential financial loss by up to 9.2% per node.
+
+  
+**Data Analyst Intern @ Cognitive and Social Development Lab CMU (_May 2023 - August 2023_)**
+- Modeled how children acquire and organize new semantic knowledge through a comprehensive analysis of three language corpora, each containing 8-13 million words, with Python, R, and NLTK.
+- Conducted hypothesis tests and built visualizations to compare the performances of two probability-based word association measures, presenting results to a lab of over 15 researchers and informing future research efforts.
+
+## Teaching Assistantships 
+
+Advanced Data Analysis (36-402): January 2025 - May 2025
+Statistical Computing (36-350): August 2023 - January 2025 
+
 
 ## Projects
-### Data-Driven EEG Band Discovery with Decision Trees
-[Publication](https://www.mdpi.com/1424-8220/22/8/3048)
+### Racial Identity Profiling in Contra Costa County
+Earned 3rd Place Prize in Undergraduate Statistics Research at CMU's Meeting of the Minds
+[Poster](https://www.stat.cmu.edu/capstoneresearch/spring2024/490files/poster2.pdf)
 
-Developed objective strategy for discovering optimal EEG bands based on signal power spectra using **Python**. This data-driven approach led to better characterization of the underlying power spectrum by identifying bands that outperformed the more commonly used band boundaries by a factor of two. The proposed method provides a fully automated and flexible approach to capturing key signal components and possibly discovering new indices of brain activity.
+- Uncovered patterns of racial and ethnic disproportionality in police stops with linear/logistic regression, hypothesis tests, and decision trees in R to make policy recommendations to Contra Costa’s Office of Justice. 
+- Performed sensitivity analyses to ensure robustness of findings despite variation in demographic data sources.
 
-![EEG Band Discovery](/assets/img/eeg_band_discovery.jpeg)
 
-### Decoding Physical and Cognitive Impacts of Particulate Matter Concentrations at Ultra-Fine Scales
-[Publication](https://www.mdpi.com/1424-8220/22/11/4240)
 
-Used **Matlab** to train over 100 machine learning models which estimated particulate matter concentrations based on a suite of over 300 biometric variables. We found biometric variables can be used to accurately estimate particulate matter concentrations at ultra-fine spatial scales with high fidelity (r2 = 0.91) and that smaller particles are better estimated than larger ones. Inferring environmental conditions solely from biometric measurements allows us to disentangle key interactions between the environment and the body.
-
-![Bike Study](/assets/img/bike_study.jpeg)
 

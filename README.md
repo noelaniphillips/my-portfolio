@@ -13,14 +13,14 @@
 **(Upcoming) Data Science Intern @ Reddit (_May 2025 - August 2025_)**
 - Ads Platform Team
 
-<img src="/images/salesforce-icon.png" alt="Salesforce Icon" width="100" height="100">
+<img src="/images/salesforce-icon.png" alt="Salesforce Icon" width="120" height="100">
 
 **Data Science Intern @ Salesforce (_May 2024 - August 2024_)**
 - Revamped a revenue-forecasting tool using Python and SQL that automated the sales quota allocation process for over 4,000 sales strategy employees. 
 - Improved XGBoost model’s performance against business logics by 14% with simplified pre-processing logic, targeted feature selection, and regularization for zero-inflated data.
 - Led cross-functional collaboration with product manager and stakeholders to align model capabilities with business needs and integrate the final product into planning dashboards like AnaPlan.
 
-<img src="/images/cmu-icon.png" alt="Salesforce Icon" width="120" height="100">
+<img src="/images/cmu-icon.png" alt="Salesforce Icon" width="100" height="100">
 
 **Machine Learning Researcher @ Carnegie Mellon University (_November 2023 - May 2024_)**
 - Developed a deep learning system simulating Bayer’s supply chain that identified weak nodes through stress-testing and improved supply chain resilience. 
@@ -35,13 +35,15 @@
 ## Teaching Assistantships 
 
 Advanced Data Analysis (36-402): January 2025 - May 2025
+
 Statistical Computing (36-350): August 2023 - January 2025 
 
 
 ## Projects
 ### Racial Identity Profiling in Contra Costa County
-Earned 3rd Place Prize in Undergraduate Statistics Research at CMU's Meeting of the Minds
 [Poster](https://www.stat.cmu.edu/capstoneresearch/spring2024/490files/poster2.pdf)
+
+Earned 3rd Place Prize in Undergraduate Statistics Research at CMU's Meeting of the Minds
 
 - Uncovered patterns of racial and ethnic disproportionality in police stops with linear/logistic regression, hypothesis tests, and decision trees in R to make policy recommendations to Contra Costa’s Office of Justice. 
 - Performed sensitivity analyses to ensure robustness of findings despite variation in demographic data sources.
@@ -49,9 +51,11 @@ Earned 3rd Place Prize in Undergraduate Statistics Research at CMU's Meeting of 
 
 ## Technical Skills
 
-Languages: Python (Pandas, NumPy, PyTorch, TensorFlow, scikit-learn), SQL, R (dplyr, tidyr, ggplot2) C, C++
-Tools: Git, SageMaker, Jupyter Notebook, Tableau, Excel, Snowflake, AWS, GCP
-Methodologies: Time-Series Forecasting, Predictive Modeling, Deep Learning, A/B Testing
+**Languages**: Python, SQL, R, C
+
+**Tools**: Git, SageMaker, Jupyter Notebook, Tableau, Excel, Snowflake, AWS, GCP
+
+**Methodologies**: Time-Series Forecasting, Predictive Modeling, Deep Learning, A/B Testing
 
 
 

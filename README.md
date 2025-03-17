@@ -1,5 +1,5 @@
 ## Education							       		
-**M.S. Computational Data Science	| Carnegie Mellon University (_May 2025 - December 2026_)**
+**M.S. Computational Data Science	| Carnegie Mellon University School of Computer Science (_May 2025 - December 2026_)**
 
 **B.S. Statistics and Machine Learning | Carnegie Mellon University (_August 2021 - May 2025_)**
 
@@ -18,14 +18,14 @@ Selected Coursework: Deep Learning, Natural Language Processing, Algorithms and 
 - Improved XGBoost model’s performance against business logics by 14% with simplified pre-processing logic, targeted feature selection, and regularization for zero-inflated data.
 - Led cross-functional collaboration with product manager and stakeholders to align model capabilities with business needs and integrate the final product into planning dashboards like AnaPlan.
 
-<img src="/images/cmu-icon.png" alt="Salesforce Icon" width="40" height="40">
+<img src="/images/cmu-icon.png" alt="CMU Icon" width="40" height="40">
 
 **Machine Learning Researcher @ Carnegie Mellon University (_November 2023 - May 2024_)**
 - Developed a deep learning system simulating Bayer’s supply chain that identified weak nodes through stress-testing and improved supply chain resilience. 
 - Trained a Graph Neural Network (GNN) using PyTorch and TensorFlow on over 250,000 high-impact disruption scenarios, predicting the monetary impact with an accuracy of 84%.  
 - Analyzed Time to Recovery (TTR) metric to pinpoint nodes whose failure would have the largest impact and suggest alternative paths, reducing potential financial loss by up to 9.2% per node.
 
-<img src="/images/cmu-icon.png" alt="Salesforce Icon" width="40" height="40">
+<img src="/images/cmu-icon.png" alt="CMU Icon" width="40" height="40">
 
 **Data Analyst Intern @ Carnegie Mellon University Cognitive Development Lab (_May 2023 - August 2023_)**
 - Modeled how children acquire and organize new semantic knowledge through a comprehensive analysis of three language corpora, each containing 8-13 million words, with Python, R, and NLTK.

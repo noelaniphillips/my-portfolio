@@ -1,8 +1,10 @@
 # Noelani Phillips
 
 ## Education							       		
-- M.S. Computational Data Science	| Carnegie Mellon University School of Computer Science (_May 2025 - December 2026_)	 			        		
-- B.S. Statistics and Machine Learning | Carnegie Mellon University (_August 2021 - May 2025_)
+**M.S. Computational Data Science	| Carnegie Mellon University School of Computer Science (_May 2025 - December 2026_)**
+
+**B.S. Statistics and Machine Learning | Carnegie Mellon University (_August 2021 - May 2025_)**
+Selected Coursework: Deep Learning, Natural Language Processing, Algorithms and Data Structures, Probability and Statistical Inference
 
 ## Work Experience
 **(Upcoming) Data Science Intern @ Reddit (_May 2025 - August 2025_)**

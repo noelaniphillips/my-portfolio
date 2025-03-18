@@ -33,7 +33,7 @@ Statistical Computing (36-350): August 2023 - January 2025
 
 
 ## Projects
-### Racial Identity Profiling in Contra Costa County
+### Racial Identity Profiling in Contra Costa County (R)
 [Poster](https://www.stat.cmu.edu/capstoneresearch/spring2024/490files/poster2.pdf)
 
 Earned 3rd Place Prize in Undergraduate Statistics Research at CMU's Meeting of the Minds
@@ -41,9 +41,11 @@ Earned 3rd Place Prize in Undergraduate Statistics Research at CMU's Meeting of 
 - Uncovered patterns of racial and ethnic disproportionality in police stops with linear/logistic regression, hypothesis tests, and decision trees in R to make policy recommendations to Contra Costa’s Office of Justice. 
 - Performed sensitivity analyses to ensure robustness of findings despite variation in demographic data sources.
 
-### Behind Schedule: An Investigation into Pittsburgh Regional Transit Performance 
+### Behind Schedule: An Investigation into Pittsburgh Regional Transit Performance (Python)
 [Repo](https://github.com/noelaniphillips/pittsburgh-bus-project/tree/main)
 
+- Sourced, cleaned, and built visualizations of key performance metrics with pandas and altair to evaluate the quality of Pittsburgh Regional Transit's bus and rail services.
+- Tracked On-Time Performance (OTP) and identified disparities, such as the poor OTP of CMU-centric bus routes compared to system-wide averages, and evaluated temporal, seasonal, and day-type influences on OTP.
 
 
 

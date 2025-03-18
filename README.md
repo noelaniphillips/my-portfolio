@@ -41,6 +41,11 @@ Earned 3rd Place Prize in Undergraduate Statistics Research at CMU's Meeting of 
 - Uncovered patterns of racial and ethnic disproportionality in police stops with linear/logistic regression, hypothesis tests, and decision trees in R to make policy recommendations to Contra Costa’s Office of Justice. 
 - Performed sensitivity analyses to ensure robustness of findings despite variation in demographic data sources.
 
+### Behind Schedule: An Investigation into Pittsburgh Regional Transit Performance 
+[Repo](https://github.com/noelaniphillips/pittsburgh-bus-project/tree/main)
+
+
+
 
 ## Technical Skills
 

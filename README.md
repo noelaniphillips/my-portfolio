@@ -2,6 +2,13 @@
 - M.S. Computational Data Science	@ Carnegie Mellon University SCS (_May 2025 - December 2026_)
 - B.S. Statistics and Machine Learning @ Carnegie Mellon University (_August 2021 - May 2025_)
 
+## Technical Skills
+
+**Languages**: Python, SQL, R, C++
+
+**Tools**: Git, SageMaker, Jupyter Notebook, Tableau, Snowflake, AWS, Google Cloud Platform
+
+**Interests**: Time-Series Forecasting, Predictive Modeling, Deep Learning, A/B Testing
 
 ## Work Experience
 
@@ -47,15 +54,6 @@ Earned 3rd Place Prize in Undergraduate Statistics Research at CMU's Meeting of 
 - Sourced, cleaned, and built visualizations of key performance metrics with pandas and altair to evaluate the quality of Pittsburgh Regional Transit's bus and rail services.
 - Tracked On-Time Performance (OTP) and identified disparities, such as the poor OTP of CMU-centric bus routes compared to system-wide averages, and evaluated temporal, seasonal, and day-type influences on OTP.
 
-
-
-## Technical Skills
-
-**Languages**: Python, SQL, R, C++
-
-**Tools**: Git, SageMaker, Jupyter Notebook, Tableau, Excel, Snowflake, AWS, Google Cloud Platform
-
-**Methodologies**: Time-Series Forecasting, Predictive Modeling, Deep Learning, A/B Testing
 
 
 

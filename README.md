@@ -4,11 +4,9 @@
 
 ## Technical Skills
 
-**Languages**: Python, SQL, R, C++
-
-**Tools**: Git, SageMaker, Jupyter Notebook, Tableau, Snowflake, AWS, Google Cloud Platform
-
-**Interests**: Time-Series Forecasting, Predictive Modeling, Deep Learning, A/B Testing
+- Languages: Python, SQL, R, C++
+- Tools: Git, SageMaker, Jupyter Notebook, Tableau, Snowflake, AWS, Google Cloud Platform
+- Interests: Time-Series Forecasting, Predictive Modeling, Deep Learning, A/B Testing
 
 ## Work Experience
 
@@ -34,9 +32,8 @@
 
 ## Teaching Assistantships 
 
-Advanced Data Analysis (36-402): January 2025 - May 2025
-
-Statistical Computing (36-350): August 2023 - January 2025 
+- Advanced Data Analysis (36-402): January 2025 - May 2025
+- Statistical Computing (36-350): August 2023 - January 2025 
 
 
 ## Projects

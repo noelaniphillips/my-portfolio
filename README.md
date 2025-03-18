@@ -1,6 +1,6 @@
 ## Education							       		
-- M.S. Computational Data Science	| Carnegie Mellon University SCS (_May 2025 - December 2026_)
-- B.S. Statistics and Machine Learning | Carnegie Mellon University (_August 2021 - May 2025_)
+- M.S. Computational Data Science	@ Carnegie Mellon University SCS (_May 2025 - December 2026_)
+- B.S. Statistics and Machine Learning @ Carnegie Mellon University (_August 2021 - May 2025_)
 
 
 ## Work Experience

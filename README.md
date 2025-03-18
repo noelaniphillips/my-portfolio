@@ -30,12 +30,6 @@
 - Modeled how children acquire and organize new semantic knowledge through a comprehensive analysis of three language corpora, each containing 8-13 million words, with Python, R, and NLTK.
 - Conducted hypothesis tests and built visualizations to compare the performances of two probability-based word association measures, presenting results to a lab of over 15 researchers and informing future research efforts.
 
-## Teaching Assistantships 
-
-- Advanced Data Analysis (36-402): January 2025 - May 2025
-- Statistical Computing (36-350): August 2023 - January 2025 
-
-
 ## Projects
 ### Racial Identity Profiling in Contra Costa County (R)
 [Poster](https://www.stat.cmu.edu/capstoneresearch/spring2024/490files/poster2.pdf)
@@ -51,7 +45,20 @@ Earned 3rd Place Prize in Undergraduate Statistics Research at CMU's Meeting of 
 - Sourced, cleaned, and built visualizations of key performance metrics with pandas and altair to evaluate the quality of Pittsburgh Regional Transit's bus and rail services.
 - Tracked On-Time Performance (OTP) and identified disparities, such as the poor OTP of CMU-centric bus routes compared to system-wide averages, and evaluated temporal, seasonal, and day-type influences on OTP.
 
+## Teaching Assistantships 
 
+- Advanced Data Analysis (36-402): January 2025 - May 2025
+- Statistical Computing (36-350): August 2023 - January 2025
+
+## Selected Coursework
+
+- Intro to Deep Learning (11-785)
+- Natural Language Processing (11-611)
+- Algorithms and Data Structures (15-122)
+- Statistical Machine Learning (36-462)
+- Probability and Statistical Inference (36-236)
+- Discrete Math (21-122)
+- Linear Algebra (21-241)
 
 
 

@@ -11,8 +11,9 @@
 ## Work Experience
 
 
-**(Upcoming) Data Science Intern @ Reddit (_May 2025 - August 2025_)**
-- Ads Platform Team
+**Data Science Intern @ Reddit (_May 2025 - August 2025_)**
+- Ads Marketplace Team
+- Developing and optimizing a Prophet model using Python, SQL, and Vertex AI to forecast ad revenue.
 
 **Data Science Intern @ Salesforce (_May 2024 - August 2024_)**
 - Revamped a revenue-forecasting tool using Python and SQL that automated the sales quota allocation process for over 4,000 sales strategy employees. 

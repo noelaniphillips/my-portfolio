@@ -12,8 +12,10 @@
 
 
 **Data Science Intern @ Reddit (_May 2025 - August 2025_)**
-- Ads Marketplace Team
-- Developing and optimizing a Prophet model using Python, SQL, and Vertex AI to forecast ad revenue.
+- Engineered a time series forecasting pipeline for predicting ad revenue using Meta’s Prophet model, achieving a Mean Absolute Percentage Error (MAPE) <1% through robust model tuning and backtesting.
+- Leveraged Python and SQL to quantify the impact of trend changepoints, seasonalities, and key regressors (e.g., business vertical, ad format) on revenue, yielding strategic opportunities for the Ads teams to optimize platform monetization.
+- Conducted comprehensive research on Reddit’s ads ecosystem, authoring an onboarding guide that has streamlined ramp-up for 4 new FTEs and interns and is set to serve as a foundational resource for future hires.
+
 
 **Data Science Intern @ Salesforce (_May 2024 - August 2024_)**
 - Revamped a revenue-forecasting tool using Python and SQL that automated the sales quota allocation process for over 4,000 sales strategy employees. 

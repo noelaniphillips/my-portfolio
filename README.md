@@ -12,7 +12,7 @@
 
 
 **Data Science Intern @ Reddit (_May 2025 - August 2025_)**
-- Engineered a time series forecasting pipeline for ad revenue using Meta’s [Prophet](https://facebook.github.io/prophet/) model, customizing its architecture to achieve a Mean Absolute Percentage Error (MAPE) <1% through iterative testing and optimization.
+- Engineered a time series forecasting pipeline for ad revenue using Meta’s [Prophet](https://facebook.github.io/prophet/) model, reducing Mean Absolute Percent Error (MAPE) from over 10% to 3.5% through custom configurations and iterative optimization.
 - Leveraged Python and SQL to quantify the impact of trend changepoints, seasonalities, and key regressors (e.g., business vertical, ad format) on revenue, identifying actionable insights for Ads teams to maximize yield.
 - Conducted comprehensive research on Reddit’s ads ecosystem, authoring an onboarding guide that has streamlined ramp-up for 4 new FTEs and interns and is set to serve as a foundational resource for future hires.
 

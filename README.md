@@ -10,7 +10,9 @@
 
 ## Work Experience
 
-
+**Data Science Intern @ Google (_May 2026 - August 2026_)**
+- Joining Google as a Data Science Intern this coming summer, stay tuned!
+  
 **Data Science Intern @ Reddit (_May 2025 - August 2025_)**
 - Engineered a time series forecasting pipeline for ad revenue using Meta’s [Prophet](https://facebook.github.io/prophet/) model, reducing Mean Absolute Percent Error (MAPE) from over 10% to 3.5% through custom configurations and iterative optimization.
 - Leveraged Python and SQL to quantify the impact of trend changepoints, seasonalities, and key regressors (e.g., business vertical, ad format) on revenue, identifying actionable insights for Ads teams to maximize yield.
